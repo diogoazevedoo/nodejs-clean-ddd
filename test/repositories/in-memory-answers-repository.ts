@@ -14,7 +14,7 @@ export class InMemoryAnswersRepository implements AnswersRepository {
     return answer
   }
 
-  async create(answer: Answer): Promise<void> {
+  async create(answer: Answer) {
     this.items.push(answer)
   }
 
